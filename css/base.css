@@ -62,6 +62,7 @@ a:not([class]) {
 img,
 video,
 audio {
+  min-width: 100%;
   max-width: 100%;
   display: block;
   height: auto;
