@@ -184,6 +184,7 @@
     content: url(../img/icons/down-arrows-white.svg);
     box-shadow: inset 0px 100px 0 0 var(--cyan);
 }
+button:hover,
 .btn-big:hover {
     box-shadow: inset 200px 0 0 0 var(--cyan);
 }
@@ -314,6 +315,10 @@ header{
     }
     .menu li a {
         color: var(--grayblue);
+        transition: .3s ease-in-out;
+    }
+    .menu li a:hover {
+        color: var(--cyan);
     }
 }
 /* ---------------- FOOTER ---------------- */
@@ -366,7 +371,7 @@ footer nav {
         margin: 0 1.6rem;
     }
     footer nav,
-    address {
+    footer address {
         display: flex;
         flex: 2;
         justify-content: flex-end;
@@ -485,13 +490,35 @@ footer nav {
     }
 }
 /* ---------------- CONTACT ME PAGE ---------------- */
-.contact h2 {
+.contact-page header {
+    margin-bottom: 4rem;
+}
+.contact-page main {
+    margin-bottom: 8rem;
+}
+.contact-page h2,
+.contact-text p {
     margin-bottom: 2rem;
+}
+.contact-text {
+    border-top: 1px solid #333d3315;
+    border-bottom: 1px solid #333d3315;
+    padding: 3.2rem 0;
+    margin-bottom: 3.6rem;
+}
+.contact-text .social-ctn {
+    justify-content: start;
+}
+.contact-text .social-ctn li:nth-child(2){
+    margin-left: 1.6rem;
+    margin-right: 1.6rem;
+}
+.contact-text path {
+    fill: var(--grayblue);
 }
 .contact-me .btn-ctn {
     display: flex;
     flex-direction: column;
-
 }
 input {
     margin-bottom: 3.2rem;
@@ -503,9 +530,6 @@ label {
 textarea {
     margin-bottom: 2.4rem;
 }
-button {
-    margin-bottom: 8rem;
-}
 input,
 textarea{
     padding: 1.7rem 1.7rem;
@@ -513,7 +537,37 @@ textarea{
 }
 textarea,
 input,
-button {
+.contact-me button {
     outline: 0;
     border: 0;
 }
+@media (min-width:48em){
+    .contact-page main {
+        margin-bottom: 10rem;
+    }
+    .contact-page header {
+        padding-top: 6.4rem;
+        margin-bottom: 10rem;
+    }
+    .contact-text h2 {
+        margin-bottom: 3rem;
+    }
+}
+@media (min-width:48em){
+    .contact-me,
+    .contact-text {
+        display: flex;
+    }
+    .contact-text {
+        padding: 5rem 0;
+        margin-bottom: 5rem;
+    }
+    .contact-page h2 {
+        min-width: 23.5rem;
+        margin-right: 17.5rem;
+    }
+    .contact-me form {
+        flex: 1;
+    }
+}
+/* ---------------- DETAIL PAGES ---------------- */
