@@ -707,12 +707,12 @@ textarea, input, .contact-me button {
 
 .next-prev a:nth-child(1):focus, .next-prev a:nth-child(1):hover {
     color: var(--lightgrey);
-    box-shadow: inset -600px 0 0 0 var(--grayblue);
+    box-shadow: inset -700px 0 0 0 var(--grayblue);
 }
 
 .next-prev a:nth-child(2):focus, .next-prev a:nth-child(2):hover {
     color: var(--lightgrey);
-    box-shadow: inset 600px 0 0 0 var(--grayblue);
+    box-shadow: inset 700px 0 0 0 var(--grayblue);
 }
 
 .next-prev a:nth-child(1):focus span, .next-prev a:nth-child(2):focus span, .next-prev a:nth-child(1):hover span, .next-prev a:nth-child(2):hover span {
