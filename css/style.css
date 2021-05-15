@@ -191,7 +191,7 @@
     box-shadow: inset 0px 100px 0 0 var(--cyan);
 }
 
-button:focus, .btn-big:focus, button:hover, .btn-big:hover {
+.contact-page button:focus, .btn-big:focus, .contact-page button:hover, .btn-big:hover {
     box-shadow: inset 200px 0 0 0 var(--cyan);
 }
 
@@ -628,6 +628,55 @@ textarea, input, .contact-me button {
     }
 }
 
+/* ---------------- PORTFOLIO PAGES ---------------- */
+
+.portfolio-page section{
+    margin-bottom: 7.2rem;
+} 
+.portfolio-page section img{
+    margin-bottom: 3.2rem;
+}
+.portfolio-page section h2{
+    margin-bottom: 3rem;
+}
+@media (min-width:48em){
+    .portfolio-page section {
+        display: flex;
+        align-items: center;
+        margin-bottom: 8rem;
+    }
+    .portfolio-page section img{
+        margin-bottom: unset;
+    }
+    .portfolio-page .contact-text{
+        display: block;
+        margin-left: 7rem;
+        max-width: 28rem;
+    }
+    .portfolio-page section:nth-child(even) {
+        flex-direction: row-reverse;
+    }
+    .portfolio-page section:nth-child(even) .contact-text{
+        margin-left: 0;
+        margin-right: 7rem;
+    }
+}
+@media (min-width:80em) {
+    .portfolio-page .contact-text{
+        margin: 0 12.5rem;
+        padding: 10.6rem 0;
+        max-width: 35rem;
+    }
+    .portfolio-page section:nth-child(even) {
+        flex-direction: row-reverse;
+    }
+    .portfolio-page section:nth-child(even) .contact-text{
+        margin: 0 12.5rem;
+    }
+    .portfolio-page .contact {
+        margin-top: 15rem;
+    }
+}
 /* ---------------- DETAIL PAGES ---------------- */
 
 .project-content article h3, .article-text-ctn, .main-project picture:nth-child(1) img {
