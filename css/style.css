@@ -192,11 +192,12 @@
     content: url(../img/icons/down-arrows-white.svg);
     box-shadow: inset 0px 100px 0 0 var(--cyan);
 }
+.btn,
 button:disabled {
     opacity: .3;
     cursor: not-allowed;
 }
-.contact-page button:not(:disabled):focus, .btn-big:focus, .contact-page button:not(:disabled):hover, .btn-big:hover {
+.contact-page button:focus, .btn-big:focus, .contact-page button:hover, .btn-big:hover {
     box-shadow: inset 200px 0 0 0 var(--cyan);
 }
 
@@ -527,39 +528,39 @@ footer nav {
 
 /* ---------------- HOME - CONTACT ---------------- */
 
-.contact {
+.contact-part {
     text-align: center;
     margin-bottom: 8rem;
 }
 
-.contact h2 {
+.contact-part h2 {
     margin-bottom: 2.8rem;
 }
 
 @media (min-width: 48em) {
-    .contact {
+    .contact-part {
         text-align: initial;
         display: flex;
         align-items: center;
         justify-content: space-between;
     }
-    .contact span {
+    .contact-part span {
         min-width: 14%;
         min-height: 1px;
         background-color: var(--grayblue);
         opacity: 15%;
         margin: 0 3.2rem;
     }
-    .contact h2 {
+    .contact-part h2 {
         margin-bottom: unset;
     }
 }
 
 @media (min-width: 80em) {
-    .contact {
+    .contact-part {
         margin-bottom: 13rem;
     }
-    .contact span {
+    .contact-part span {
         min-width: 47%;
     }
 }
