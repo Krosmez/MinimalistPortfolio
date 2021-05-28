@@ -214,21 +214,23 @@ h1, h2, h3 {
     font-family: var(--fftitle);
     font-weight: 700;
 }
-
-h1 {
-    font-size: 3.12em;
-    line-height: 5rem;
+h1{
+    font-size: 4rem;
+    line-height: 4.2rem;
+    letter-spacing: -0.36px;
 }
 
 h2 {
     font-size: 2.5em;
     line-height: 4.2rem;
+    letter-spacing: -0.36px;
 }
 
 h3 {
     font-weight: 400;
     font-size: 2em;
     line-height: 3.6rem;
+    letter-spacing: -0.29px;
 }
 .curr {
     color: var(--cyan) !important;
@@ -238,6 +240,13 @@ h3 {
     768px that don't have a style in the wireframe */
     a:not([class]) {
         text-decoration: none;
+    }
+}
+@media (min-width:62em){
+    h1 {
+        font-size: 5rem;
+        line-height: 5rem;
+        letter-spacing: -0.45px;
     }
 }
 /* ---------------- HEADER ---------------- */
@@ -848,6 +857,9 @@ textarea, input, .contact-me button {
     .next-prev,
     .main-project picture:nth-child(1) img {
         margin-bottom: 11.5rem;
+    }
+    .project-tags {
+        font-size: 1.6rem;
     }
     .project-content {
         display: flex;
