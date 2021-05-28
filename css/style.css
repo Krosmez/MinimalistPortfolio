@@ -192,7 +192,7 @@
     content: url(../img/icons/down-arrows-white.svg);
     box-shadow: inset 0px 100px 0 0 var(--cyan);
 }
-.btn,
+.btn:disabled,
 button:disabled {
     opacity: .3;
     cursor: not-allowed;
